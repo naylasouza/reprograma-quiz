@@ -1,4 +1,5 @@
 import react from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../../components/Button'
 import './style.scss'
 
@@ -9,7 +10,10 @@ const Home = (): JSX.Element => {
             <p className='sub-paragrapher'>Tá na duvida em qual bootcamp escolher? Fique tranquila, este quiz tem o objetivo de auxiliar mulheres cis e trans a encontrarem o curso ideal com base em seu perfil.</p>
             <div className='container-future'>
                 <p className='future'>Descubra seu futuro!!!</p>
-                <Button text='Login' className='text-btn' />
+                <Link to={'/Login'}>
+                <Button text='Login'  className='text-btn' />
+                </Link>
+                
             </div>
         </div>
     )
