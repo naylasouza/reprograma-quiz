@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Login = (): JSX.Element => {
     return(
-        <Link to={"/"}>
         <div>BORAAAAAAAA</div>
-        </Link>
+       
         
     )
 }
