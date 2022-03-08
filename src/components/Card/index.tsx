@@ -9,7 +9,7 @@ interface Props {
 
 const Card = ({ style, className, children }: Props): JSX.Element => {
   return (
-    <div className='card-login'>
+    <div className='card-login grid-column-5-10'>
       <div className={`${className}`}>
          {children}
       </div>

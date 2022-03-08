@@ -10,19 +10,23 @@ import {
 } from '@material-ui/core'
 import './style.scss'
 import Date from "../../components/Date"
+import Logo from "../../Icons/AvatarEmpty"
 
+interface Props {
+  photo?: string
+}
 
-
-const Login = (): JSX.Element => {
+const Login = ({photo}: Props): JSX.Element => {
 	return (
-		<div >
-			<Card className="container-login">
+		<div  className=" container-grid">
+			<Card className="container-login ">
+				<Logo />
 				<Input
 					label="Nome completo"
-					className="border"
+					className="border margin-top-20"
 				/>
 
-				<div className="border">
+				<div className="border margin-left-zero margin-top-10 muiInputLabel-genre">
 					<FormControl fullWidth>
 						<InputLabel >Identidade de gênero</InputLabel>
 						<Select>
@@ -32,15 +36,13 @@ const Login = (): JSX.Element => {
 						</Select>
 					</FormControl>
 				</div>
-
-				{/* Data */}
 				<Date
 					label="Data de nascimento"
 					value={ null}
 					onChange={e => ('funcaovazia')}
-					className="border"
+					className="border margin-left-zero margin-top-10"
 				/>
-				<Button text={"Próximo"} />
+				<Button text={"Próximo"} className='margin-card'/>
 			</Card>
 
 		</div>

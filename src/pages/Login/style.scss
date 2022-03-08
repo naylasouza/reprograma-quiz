@@ -1,7 +1,25 @@
-
+.muiInputLabel-genre{
+  .MuiInputLabel-animated{
+    margin-left: 13px;
+    padding: 0 12px 10px
+  }
+}
+.grid-column-5-9 {
+  grid-column: 5 / 9;
+}
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 32px;
+  min-height: calc(100% - 80px - 32px - 32px);
+  margin: calc(32px + 80px) 32px 32px 32px;
+}
+.grid-column-5-10 {
+  grid-column: 5 / 10;
+}
 .container-login {
   margin-top: 16px;
-  padding: 24px;
+  padding: 40px  40px 0;
   align-items: center;
   text-align: center;
 }
@@ -13,4 +31,25 @@
     border: solid 1.6px #2e3451 !important;
     margin-left: 24px;
     color: black;
+}
+.margin-left-zero{
+  margin-left: 0 !important;
+}
+.margin-top-10{
+  margin-top: 10px !important;
+}
+.margin-top-20{
+  margin-top: 20px !important;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+// .muiFilledInput-padding{
+//   .MuiFilledInput-input {
+//     padding: 17px 12px 10px;
+//   }
+// }
+.margin-card{
+  margin: 30px 0 60px 0;
 }
