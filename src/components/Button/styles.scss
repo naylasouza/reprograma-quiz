@@ -12,4 +12,24 @@
     font-family: 'Lato', sans-serif;
     line-height: 1.29;
     letter-spacing: 0.14px;
+    
+  }
+
+  .button:hover{
+    animation: btn-animation 1s ease-out forwards;
+  }
+
+  @keyframes btn-animation {
+    0% {
+      transform: translate(0px);
+    }
+    25%{
+      transform: translateY(-20px);
+    }
+    50%{
+      transform: translateY(20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
   }
