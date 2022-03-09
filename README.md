@@ -10,7 +10,8 @@
 <br/>
 
 ## Sobre
-Tá na duvida em qual bootcamp escolher para o seu futuro? Fique tranquila, este quiz foi desenvolvido com o  objetivo de auxiliar mulheres cis e trans a encontrarem o curso ideal com base em seu perfil.
+Tá na dúvida em qual bootcamp escolher para o seu futuro? Fique tranquila, este quiz foi desenvolvido com o objetivo de auxiliar mulheres cis e trans a encontrarem o curso ideal com base em seu perfil. 
+
 (Meu plano de desenvolvimento individual - estudos)
  
 
