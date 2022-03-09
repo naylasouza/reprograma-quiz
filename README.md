@@ -18,9 +18,9 @@ Tá na duvida em qual bootcamp escolher para o seu futuro? Fique tranquila, este
 ## Rotas
 Aqui você encontra todas as rotas
 
-"/": página inicial
-"/login": Página de login (depois de logar na pagina inicial você será redirecionado para a tela de login onde sera carregado seus dados)
-"/quiz": Página de quiz (onde terá todas as perguntas necessarias para auxiliar na escolha do curso)
-"/result-front": Página de resultado como front-end (Ao finalizar o quiz aparecera a tela com o curso ideal para cada candidata)
-"/result-back": Página de resultado como back-end (Ao finalizar o quiz aparecera a tela com o curso ideal para cada candidata)
+"/": página inicial **
+"/login": Página de login (depois de logar na pagina inicial você será redirecionado para a tela de login onde sera carregado seus dados) **
+"/quiz": Página de quiz (onde terá todas as perguntas necessarias para auxiliar na escolha do curso) **
+"/result-front": Página de resultado como front-end (Ao finalizar o quiz aparecera a tela com o curso ideal para cada candidata) **
+"/result-back": Página de resultado como back-end (Ao finalizar o quiz aparecera a tela com o curso ideal para cada candidata) **
 
