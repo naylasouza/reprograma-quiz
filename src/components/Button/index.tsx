@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import './styles.scss'
 
 interface Props {
   text: string
   disabled?: boolean
   className?: string
+  onClick?: MouseEventHandler<HTMLButtonElement>
+ 
 }
 
 const Button = ({
   text,
   disabled, 
-  className
+  className,
+  onClick
 }: Props): JSX.Element => (
-  <button className={`button ${className}`}>
+  <button className={`button ${className}`}  onClick={onClick}>
     {text}
   </button>
 )

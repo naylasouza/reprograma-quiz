@@ -11,7 +11,7 @@ body{
   margin: 110px 40px 40px 80px;
 }
 .container-future{
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .paragrapher{
   font-size: 54px;
@@ -31,10 +31,37 @@ body{
   margin-bottom: 14px;
 }
 .text-btn{
-  width: 200px;
+  width: 200px !important;
   margin-top: 0;
 }
+.selects-date{
+  width: 347px;
+  border-radius: 3%;
+}
+.MuiFormLabel-root{
+    color: #ffff;
+}
 
+.MuiInputBase-root{
+    color: #ffff;
+}
+.MuiSvgIcon-root{
+  color: #ffff;
+}
+.MuiInputBase-root{
+  color: #ffff !important;
+}
+.MuiSelect-icon{
+  color: #ffff !important;
+}
+.border-solid{
+  border-bottom: 1px solid #fff;
+}
+.photo-login{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 @media (max-width: 599px) {
   .container {
     margin: 65px 40px 40px 45px;
