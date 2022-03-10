@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Card from "../../components/Card"
 import { FormControlLabel, Radio, RadioGroup, FormControl, FormLabel } from '@material-ui/core'
 import './style.scss'
@@ -6,6 +6,8 @@ import Button from "../../components/Button"
 
 
 const Quiz = (): JSX.Element => {
+
+
 	const questions = [
 		{
 			questionTitle: 'Prefiro fotografar lugares do que ler livros',
@@ -47,23 +49,35 @@ const Quiz = (): JSX.Element => {
 			],
 		},
 	]
+  const [currentQuestion, setCurrentQuestion] = useState(0)
 
+	const handleButton = () => {
+		const nextQuestion = currentQuestion + 1;
+		if(nextQuestion < questions.length){
+			setCurrentQuestion(nextQuestion);
+			//proxima
+		}else{
+			alert("ACABBBBBBBOOOUUUUU ")
+		}
+	
+	}
 
 	return (
 		<div className=" container-grid">
 			<Card  >
-					<p className="question">{questions[0].questionTitle}</p>
+					<p className="question">{questions[currentQuestion].questionTitle}</p>
 				<div >
 					<FormControl>
 						<RadioGroup>
-						{questions[0].options.map(({ text, text: radioLabel }) => (
+						{questions[currentQuestion].options.map(({ text, text: radioLabel }) => (
 							<FormControlLabel 
 								className="question" 
 								value={text} 
 								control={<Radio />} 
 								label={radioLabel} />
 						))}
-						<Button text={"Proxima questao"} />
+						<Button text={"Próxima questão"}
+						onClick={handleButton} />
 							
 						</RadioGroup>
 					</FormControl>
