@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { useHistory } from 'react-router-dom'
 import Button from "../../components/Button"
 import Card from '../../components/Card'
 import './style.scss'
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const Login = ({ photo }: Props): JSX.Element => {
+	const history = useHistory()
 	const [userData, setUserData] = useState()
 
 	const onClicke = () => {
@@ -34,7 +36,7 @@ const Login = ({ photo }: Props): JSX.Element => {
 			
 			<Card className="container-login ">
 				
-				{userData ? (
+				{/* {userData ? (
 				// eslint-disable-next-line jsx-a11y/alt-text
 				<img className="photo-login" src={userData?.picture?.medium} />
 			) : <Logo widthIcon={120} heightIcon={120} />		
@@ -42,7 +44,7 @@ const Login = ({ photo }: Props): JSX.Element => {
 			<p className="name-login">Nome</p>
 			 <button className="input-login">{userData?.name?.title} {userData?.name?.first} </button>
 			 <p className="name-login">Sobrenome</p>
-			 <button className="input-login">{userData?.name?.last} </button>
+			 <button className="input-login">{userData?.name?.last} </button> */}
 			 <div className="display-flex">
 			 <Button text={"Criar usuário"} className='margin-lef teste'
 					onClick={onClicke}
@@ -50,6 +52,7 @@ const Login = ({ photo }: Props): JSX.Element => {
 					<Button 
 						text={"Começar quiz"} 
 						className='teste'
+						onClick={() => history.push('/quiz')}
 					/>
 			 </div>
 				
