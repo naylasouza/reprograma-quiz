@@ -5,11 +5,18 @@
 	}
 }
 .question{
-	font-size: 20px;
+  font-size: 20px;
   font-weight: 500;
-  
+  color: #2e3451 !important;
+  margin:30px 30px 14px
 }
-.MuiTypography-body1{
-	font-size: 20px !important;
-  font-weight: 500 !important;
+.icon-button{
+  margin: 14px 30px 30px;
+  color: #2e3451 !important;
+}
+.line-divider{
+	border-bottom: solid 1.6px #2e3451;
+}
+.margin-30{
+	margin: 30px
 }
