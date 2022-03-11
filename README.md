@@ -20,7 +20,12 @@ Tá na dúvida em qual bootcamp escolher para o seu futuro? Fique tranquila, est
 - SCSS
 - HTML
 
-
+## Dependências
+Em seu terminal: 
+```bash
+npm install
+```
+	
 ## Rotas
 Aqui você encontra todas as rotas
 
