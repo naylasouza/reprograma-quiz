@@ -16,18 +16,23 @@ const Login = ({ photo }: Props): JSX.Element => {
 	const [userData, setUserData] = useState()
 
 	const onClicke = () => {
-		axios.get('https://randomuser.me/api/')
+		// Uso do try catch para tentar um tratativo do erro que esta ocorrendo
+		try{
+			axios.get('https://randomuser.me/api/')
 			.then((response) => {
 				setUserData(response.data.results[0])
-				console.log(response, 'opa')
-			}).catch((error)=>{
-				console.log(error, 'deu erro')
 			})
+
+		}catch(err){
+				console.log(err, 'deu erro')
+			}
 	}
 
-	// useEffect(() => {
-  //   if (!userData) onClicke()
-  // }, [])
+	
+
+// 	useEffect(() => {
+//     if (!userData) onClicke()
+//   }, [userData])
 
 	
 	return (

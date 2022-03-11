@@ -12,24 +12,25 @@
     font-family: 'Lato', sans-serif;
     line-height: 1.29;
     letter-spacing: 0.14px;
+    transition: 0.6s;
   }
 
 .button:hover{
   animation: btn-animation 1s ease-out forwards;
 }
+// .btn1{
+//   background-image: linear-gradient(to left, #60116a, #7b057e, #924a90, #90639e);
+// }
 
 @keyframes btn-animation {
     0% {
       transform: translate(0px);
     }
-    25%{
-      transform: translateY(-5px);
-    }
     50%{
-      transform: translateY(10px);
+      transform: translateX(5px);
     }
     100%{
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
   }
 

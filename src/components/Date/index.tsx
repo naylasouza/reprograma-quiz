@@ -14,6 +14,7 @@ interface Props {
   style?: CSSProperties
   format?: string
   className?: string
+  minDate?: Date
 }
 
 
@@ -23,6 +24,7 @@ const InputDate = ({
   onChange,
   style,
   className,
+  minDate,
 }: Props): JSX.Element => (
   <div className={className}>
     <MuiPickersUtilsProvider libInstance={moment} utils={MomentUtils}>
@@ -36,7 +38,7 @@ const InputDate = ({
         format={'MM/dd/yyyy'}
         onChange={onChange}
         style={style}
-        InputAdornmentProps={{ position: 'start' }}
+        minDate={minDate}
         className={"border"}
       />
     </MuiPickersUtilsProvider>

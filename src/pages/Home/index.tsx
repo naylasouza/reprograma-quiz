@@ -1,4 +1,4 @@
-import react from 'react'
+import React, { useState} from 'react'
 import { useHistory } from 'react-router-dom'
 import Input from "../../components/Input"
 import {
@@ -11,9 +11,16 @@ import './style.scss'
 import Date from "../../components/Date"
 import Button from '../../components/Button'
 import './style.scss'
+import moment from 'moment'
 
 const Home = (): JSX.Element => {
+	const [value, setValue] = useState<Date | null> ()
+		
 	const history = useHistory()
+
+	const handleChange = (newValue: Date | null) => {
+		setValue(newValue);
+	  };
 	
     return (
         <div className='container'>
@@ -31,10 +38,12 @@ const Home = (): JSX.Element => {
 						</Select>
 					</FormControl>
 				</div>
+		
                 <Date
 					label="Data de nascimento"
+					minDate={moment().toDate()}
 					value={null}
-					onChange={e => ('funcaovazia')}
+					onChange={handleChange}
 					className=" selects-date margin-left-zero margin-top-10 border-solid"
 				/>
 				
@@ -48,3 +57,4 @@ const Home = (): JSX.Element => {
     )
 }
 export default Home
+

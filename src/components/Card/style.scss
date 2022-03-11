@@ -4,4 +4,18 @@
     background-color: #ffffff;
     height: fit-content;
     display: grid;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+  }
+
+  @keyframes slide{
+    from{
+      opacity: 0;
+    }
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
   }

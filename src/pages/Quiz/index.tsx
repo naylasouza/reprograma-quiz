@@ -55,7 +55,6 @@ const Quiz = (): JSX.Element => {
 		const nextQuestion = currentQuestion + 1;
 		if(nextQuestion < questions.length){
 			setCurrentQuestion(nextQuestion);
-			//proxima
 		}else{
 			alert("ACABBBBBBBOOOUUUUU ")
 		}
@@ -71,7 +70,7 @@ const Quiz = (): JSX.Element => {
 						<RadioGroup>
 						{questions[currentQuestion].options.map(({ text, text: radioLabel }) => (
 							<FormControlLabel 
-								className="question" 
+								className="question icon-radio" 
 								value={text} 
 								control={<Radio />} 
 								label={radioLabel} />
